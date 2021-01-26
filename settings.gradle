@@ -1,2 +1,3 @@
+include ':libHereExplore'
 include ':app'
 rootProject.name = "NaviHere"

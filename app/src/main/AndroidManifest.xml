@@ -2,13 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.si.navi.here">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NaviHere">
+        android:theme="@style/Theme.NaviHere"
+        android:usesCleartextTraffic="true">
+
+        <meta-data android:name="com.here.sdk.access_key_id" android:value="bRtg0CoRuL-m8OK98ITc1A" />
+        <meta-data android:name="com.here.sdk.access_key_secret" android:value="lm7ZiAru-WZALfPrN30Z97cAyZNB09fa1XFhJT1_X6MSi03QQzvJbf4FaAEbsIqkCr3N74UJ2OaKP3vdfbZoIA" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
